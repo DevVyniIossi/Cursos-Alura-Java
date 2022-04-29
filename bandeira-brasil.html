@@ -1,0 +1,41 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+//comando para especificar tipo de desenho //
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+// comando para  fundo verde da baandeira do Brasil //
+
+    pincel.fillStyle='green';
+    pincel.fillRect(0, 0, 600, 400);
+
+// comando para fazer um triangulo para imitar o "losango" da bandeira do Brasil. //    
+
+    pincel.fillStyle='yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 50);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+// comando para fazer o outro triangulo para imitar o "losango" da bandeira do Brasil. // 
+
+    pincel.beginPath();
+    pincel.moveTo(300, 350);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+// comando para fazer o circulo azul da bandeira do Brasil/
+//    
+
+    pincel.fillStyle='darkblue';
+    pincel.beginPath();
+
+    pincel.arc(300, 200, 100, 0, 2*3.14);
+    pincel.fill();
+
+</script>
